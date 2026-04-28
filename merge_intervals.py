@@ -16,5 +16,3 @@ def merge_intervals(intervals: list[list[int]]) -> list[list[int]]:
             result.append(interval)
 
     return result
-
-merge_intervals([[2,6],[1,3],[8,10]])
