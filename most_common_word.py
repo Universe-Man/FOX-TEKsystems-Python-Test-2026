@@ -21,5 +21,3 @@ def most_common_word(text: str, stopwords: set[str]) -> str | None:
         return sorted_word_list[0]
     else:
         return None
-
-most_common_word("hello My NAME is Ian helLO HELLO is my my hello", ["is", "MY"])
