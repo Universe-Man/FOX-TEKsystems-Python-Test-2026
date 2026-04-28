@@ -2,8 +2,8 @@
 
 My name is Ian Pollack and thank you for your consideration and reviewing this assessment.
 
-My solutions for tasks #1 and #2 can be found in files "most_common_word.py" and "merge_intervals.py" respectively. Tasks #3, #4, and #5 weren't able to be completed before the tie constraint expired, but I would be happy to discuss the problems further during an interview.
+My solutions can be found in their applicable file names.
 
-Thank you again! Looking forward to hearing from you soon!
+Thank you! Looking forward to hearing from you soon and our discussion.
 
 ## - Ian Pollack -
