@@ -5,21 +5,20 @@ from datetime import datetime
 
 class Logger:
     def __init__(self):
-        # Initialize storage for log entries
-        pass
+        self.logs = []
 
     def log(self, level: str, message: str) -> None:
-        """Record a log entry with a timestamp, level, and message."""
-        # Create and store a log entry
-        pass
+        entry = {
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "level": level.upper(),
+            "message": message
+        }
+        self.logs.append(entry)
 
     def get_logs(self, level: str | None = None) -> list[dict]:
-        """
-        Return all stored log entries.
-        If level is provided, return only entries matching that level.
-        """
-        pass
+        if level is None:
+            return self.logs
+        return [entry for entry in self.logs if entry["level"] == level.upper()]
 
     def search(self, keyword: str) -> list[dict]:
-        """Return all log entries whose message contains the keyword."""
-        pass
+        return [entry for entry in self.logs if keyword in entry["message"]]
